@@ -1,0 +1,85 @@
+<mat-card>
+
+<mat-card-content>
+
+<form  [formGroup]="loginForm">
+  <div class=" row ">
+
+
+  <div class="col-md-6">
+    <mat-form-field appearance="outline">
+      <mat-label>{{ 'ID' | translate }}</mat-label>
+      <input matInput type="number" id="studentId" name="studentId" formControlName="studentId" required>
+      <mat-error>{{ getErrorMessage('studentId') }}</mat-error>
+
+    </mat-form-field>
+  </div>
+  <div class="col-md-6">
+    <mat-form-field appearance="outline" class="small-input">
+      <mat-label>{{ 'Name' | translate }}</mat-label>
+      <input matInput id="studentName"   formControlName="studentName" required minlength="8">
+      <mat-error>{{ getErrorMessage('studentName') }}</mat-error>
+    </mat-form-field>
+
+  </div>
+  <div class="col-md-6">
+    <mat-form-field appearance="outline">
+      <mat-label>{{ 'Email' | translate }}</mat-label>
+      <input matInput type="email" id="studentEmail" name="studentEmail"formControlName="studentEmail" required>
+      <mat-error>{{ getErrorMessage('studentEmail') }}</mat-error>
+
+    </mat-form-field>
+  </div>
+
+  <div class="col-md-6">
+    <mat-form-field appearance="outline">
+      <mat-label>{{ 'Mobile' | translate }}</mat-label>
+      <input matInput type="text" id="studentMobile" name="studentMobile" formControlName="studentMobile" required >
+      <mat-error>{{ getErrorMessage('studentMobile') }}</mat-error>
+
+    </mat-form-field>
+  </div>
+
+  <div class="col-md-6">
+    <mat-form-field appearance="outline">
+      <mat-label>{{ 'studentGraduationDate' | translate }}</mat-label>
+      <input matInput [matDatepicker]="picker" formControlName="studentGraduationDate" readonly="true">
+      <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
+      <mat-error>{{ getErrorMessage('studentGraduationDate') }}</mat-error>
+
+    </mat-form-field>
+  </div>
+
+  <div class="col-md-6">
+    <mat-radio-group formControlName="studentGender" required>
+      <mat-radio-button value="male">{{ 'male' | translate }}</mat-radio-button>
+      <mat-radio-button value="female">{{ 'female' | translate }}</mat-radio-button>
+      <mat-error>{{ getErrorMessage('studentGender') }}</mat-error>
+
+    </mat-radio-group>
+  </div>
+
+  <div class="col-md-6">
+    <h2>{{'StudentGraduationCertificateImageAttachment'| translate }}</h2>
+    <input type="file" (change)="onFileChange($event)" accept="image/*" #file/>
+    <mat-error>{{ getErrorMessage('studentGraduationCertificateImage') }}</mat-error>
+
+  </div>
+  <div class="row justify-content-center">
+    <div class="col-auto">
+  <button type="submit" mat-raised-button  (click)="onSubmit()">{{ 'submit' | translate }}</button>
+</div>
+<div class="col-auto">
+  <button  mat-raised-button  (click)="resetData()" color="accent">{{ 'reset' | translate }}</button>
+</div>
+</div>
+</div>
+</form>
+
+
+
+
+
+</mat-card-content>
+</mat-card >

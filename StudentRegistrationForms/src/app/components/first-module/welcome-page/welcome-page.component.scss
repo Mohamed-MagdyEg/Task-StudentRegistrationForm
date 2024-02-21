@@ -1,0 +1,22 @@
+
+.register-container{
+  display:flex;
+  align-items:center;
+  justify-content: center;
+  height: 100vh;
+  flex-direction: column;
+
+}
+.register-container h1{
+  color: #fff;
+  font-size: 52px;
+}
+.register-container h4{
+  color: #fff;
+  font-size: 15px;
+  text-align: center;
+}
+ button {
+
+    margin-top: 16px;
+  }

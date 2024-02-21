@@ -1,0 +1,33 @@
+{
+  "Register":"تسجيل",
+
+  "ID": "معرف",
+  "Name": "الاسم ",
+  "Email": "البريد الإلكتروني",
+  "Mobile": "الجوال",
+  "male": "ذكر",
+  "female": "أنثى",
+  "uploadImage": "تحميل الصورة",
+  "submit": "إرسال",
+  "reset":"مسح",
+  "MM/DD/YYYY":"MM/DD/YYYY",
+  "StudentGraduationCertificateImageAttachment":"مرفق صورة شهادة التخرج للطالب",
+  "dataSavedSuccessfully":"تم حفظ المعلومات بنجاح",
+  "studentGraduationDate":"تاريخ تخرج الطالب",
+  "welcomeToOurPage":"مرحبا بكم في صفحتنا",
+  "studentIdIsRequired": "مطلوب رقم الهوية",
+  "studentIdMinLength": "يجب أن يكون رقم الهوية على الأقل 8 أحرف",
+  "InvalidEmailFormat": "تنسيق البريد الإلكتروني غير صالح",
+  "InvalidMobileFormat": "تنسيق الهاتف المحمول غير صالح",
+  "studentIdMaxLength": "يجب أن يكون رقم الهوية على الأكثر 11 حرفًا",
+  "studentEmailIsRequired": "البريد الإلكتروني مطلوب",
+  "studentNameIsRequired": "الاسم مطلوب",
+  "studentMobileIsRequired": "الجوال مطلوب",
+  "studentGenderIsRequired": "الجنس مطلوب",
+  "studentGraduationCertificateImageIsRequired": "صورة شهادة التخرج مطلوبة",
+  "studentGraduationDateIsRequired":"مطلوب تاريخ التخرج"
+
+
+
+
+}
